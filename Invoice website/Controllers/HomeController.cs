@@ -10,7 +10,13 @@ namespace Invoice_website.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Jeff Hamlin";
+
+            return View();
+        }
+        public ActionResult InvoiceData()
+        {
+            ViewBag.Title = "Jeff Hamlin";
 
             return View();
         }

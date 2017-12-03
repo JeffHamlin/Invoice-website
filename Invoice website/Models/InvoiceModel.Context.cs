@@ -13,10 +13,10 @@ namespace Invoice_website.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities1 : DbContext
+    public partial class InvoiceEntities : DbContext
     {
-        public Entities1()
-            : base("name=Entities1")
+        public InvoiceEntities()
+            : base("name=InvoiceEntities")
         {
         }
     
@@ -25,5 +25,6 @@ namespace Invoice_website.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Invoice_Table> Invoice_Table { get; set; }
     }
 }
